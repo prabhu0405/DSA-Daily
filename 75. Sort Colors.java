@@ -6,7 +6,7 @@ We will use the integers 0, 1, and 2 to represent the color red, white, and blue
 
 You must solve this problem without using the library's sort function. */
 
-class Solution {
+/*class Solution {
     public void sortColors(int[] nums) {
         for(int i = 0; i < nums.length; i++){
             for(int j = 0; j < nums.length; j++){
@@ -18,11 +18,11 @@ class Solution {
             }
         }
     }
-}
+} */
 
 
 //alternate Dutch National Flag Algo
-
+class Solution{
 public void sortColors(int[] nums) {
     int low = 0, mid = 0, high = nums.length - 1;
     while (mid <= high) {
@@ -38,4 +38,5 @@ public void sortColors(int[] nums) {
             nums[high--] = tmp;
         }
     }
+}
 }
